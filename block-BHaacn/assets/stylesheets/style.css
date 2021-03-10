@@ -1,0 +1,497 @@
+/* Eric Mayers Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My Reset */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+  --primary: #3826ac;
+  --secondary: #f9234d;
+  --bg: #dfecff;
+  --text: #5a5959;
+  --pure: #fff;
+  --ternary: #dfecff;
+  --footer: #102169;
+}
+
+/* Global */
+
+body {
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Container */
+
+.container {
+  max-width: 70rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+/* General */
+
+.padding {
+  padding: 5rem 0;
+}
+
+.text {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Flex */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+/* Typography */
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--pure);
+  padding: 0.7rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 6px;
+}
+
+/* Header */
+
+.header {
+  padding: 0.8rem 0;
+  position: absolute;
+  width: 100%;
+}
+
+.brand h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--pure);
+}
+
+.nav-menu li {
+  margin-left: 1.3rem;
+}
+
+.nav-menu li a {
+  font-size: 1.2rem;
+  color: var(--pure);
+  font-weight: 500;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(to right, #3826accc, #3826accc, #3826accc),
+    url(../banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+  color: var(--pure);
+}
+
+.hero-content {
+  flex: 0 1 55%;
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.hero-content strong {
+  color: var(--secondary);
+}
+
+.hero-content p {
+  padding: 2.5rem 0 2rem 0;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+
+.about-content {
+  padding-left: 2rem;
+}
+
+.about-content h3 {
+  text-transform: uppercase;
+}
+
+.about-content p {
+  padding: 1rem 0 1.5rem 0;
+}
+
+/* Feature Section */
+
+.feature {
+  background-color: var(--bg);
+}
+
+.col-1-3 {
+  flex: 0 1 30%;
+  border: 3px dashed var(--secondary);
+  padding: 1.2rem;
+  position: relative;
+}
+
+.col-1-3 span {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  padding: 0 0.5rem;
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+.col-1-3 p {
+  text-align: justify;
+}
+
+/* Schedule Section */
+
+.schedule h3 {
+  text-align: center;
+  padding: 1rem 0 4rem;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule_time {
+  background-color: var(--pure);
+  height: 9rem;
+  border-radius: 50%;
+  width: 9rem;
+  border: 3px dashed var(--secondary);
+  position: relative;
+}
+
+.schedule_img {
+  flex: 0 1 20%;
+}
+
+.schedule_text {
+  flex: 0 1 52%;
+  align-self: flex-start;
+}
+
+.schedule_time strong {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--secondary);
+}
+
+.schedule-row {
+  margin-bottom: 2rem;
+}
+
+.schedule_time .line {
+  border-left: 3px dashed var(--secondary);
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  top: 0;
+}
+
+.schedule .active {
+  background-color: var(--secondary);
+}
+
+.schedule .active strong {
+  color: var(--pure);
+}
+
+.schedule .btn {
+  margin-top: 2rem;
+}
+
+/* Service Section */
+
+.service .active {
+  background-color: var(--secondary);
+  color: var(--pure);
+}
+
+.service {
+  background-color: var(--bg);
+  padding: 4rem 0;
+}
+
+.col-1-4 {
+  flex: 0 1 25%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.col-1-4 img {
+  width: 4rem;
+  display: inline-block;
+}
+
+.col-1-4 p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.col-1-4 h4 {
+  padding: 0.3rem 0;
+  font-size: 1.6rem;
+}
+
+/* 
+.time_red span {
+  color: var(--pure);
+}
+
+.schedule_time .line {
+  border-left: 1px dashed var(--danger);
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  top: 0;
+}
+
+.schedule_time {
+  position: relative;
+}
+
+.schedule-btn {
+  text-align: center;
+} */
+/* Media Query */
+
+/* @media screen and (max-width: 786px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-48,
+  .flex-30 {
+    flex: 0 1 100%;
+    margin: 1.3rem 0;
+  }
+
+  .padding {
+    padding: 1rem 0;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .footer small {
+    padding-bottom: 1rem;
+  }
+
+  .brand {
+    padding-bottom: 0.6rem;
+  }
+
+  .nav-menu li {
+    margin-left: 0;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .heading {
+    padding-bottom: 0;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+  }
+} */
